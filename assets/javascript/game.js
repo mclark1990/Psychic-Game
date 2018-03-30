@@ -7,17 +7,7 @@ var wins = 0
     losses = 0
     guessesNum = 9
     totalGuesses = [];
-
-var html = 
-        "<p>Wins: " + wins + "</p>" +
-        "<p>Losses: " + losses + "</p>" +
-        "<p>Guesses Left: " + guessesNum + "</p>"+
-        "<p> Your Guesses So Far: " + totalGuesses + "</p>";
-var ScoreText = getElementById("game").innerHTML = html;               
-       
-document.onload = function(event){
-    
-}                
+               
         
 
 //function runs when user presses a key
