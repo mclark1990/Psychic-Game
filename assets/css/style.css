@@ -1,0 +1,39 @@
+
+body, html{
+    font-size:18px;
+    font-family:sans-serif;
+    height:100%;
+    margin:0;    
+}
+
+.jumbotron{
+    text-align:center;
+    font-family:'Cairo' , sans-serif;
+    background-color:darkblue;
+    opacity: .9;
+}
+
+.jumbotron h1{
+    color:goldenrod;
+}
+
+#game p{
+    color:whitesmoke;
+}
+
+#main-content p{
+    color:goldenrod;
+}
+
+#main-content{
+    border: 5px solid darkblue;
+    padding:40px;
+    margin-top:20px;
+    height:250px;
+}
+
+h2{
+    text-align: center;
+    font-weight: bold;
+    color:goldenrod;
+}

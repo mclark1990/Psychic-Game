@@ -17,18 +17,23 @@ document.onkeyup = function(event){
 // determines what key user pushed
 var userGuess = String.fromCharCode(event.keyCode).toLowerCase();
 
-console.log(userGuess);
+
+
 // Randomly chooses a letter from computer choices
 var computerGuess = computerChoices[Math.floor(Math.random() * computerChoices.length)];
 
-console.log(computerGuess);
 
-if (userGuess === computerGuess){
+//var for user key input
+var UserChoices = ["a","b","c","d","e","f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z"]
+
+
+// if statements
+if (UserChoices.indexOf(userGuess) > -1){
+
+    if (userGuess === computerGuess){
     wins++;
     guessesNum = 9;
     totalGuesses = [];
- 
-    console.log(guessesNum);
 }
 
 if (userGuess != computerGuess){
@@ -42,7 +47,7 @@ if (guessesNum === 0){
     guessesNum = 9;
 }
 
-
+//adds text to the #game div to reflect wins,losses,etc.
 var html = 
         "<p>Wins: " + wins + "</p>" +
         "<p>Losses: " + losses + "</p>" +
@@ -50,7 +55,7 @@ var html =
         "<p> Your Guesses So Far: " + totalGuesses + "</p>";
 
 document.querySelector("#game").innerHTML = html;
-
+}
 };
         
 
